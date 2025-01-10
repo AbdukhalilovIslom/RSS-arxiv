@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- open graph meta tag s-->
+    <meta property="og:title" content="Tethertradrex" />
+    <meta property="og:description" content="This is the best Investment website in the world." />
+    <meta property="og:image" content="./items/images/opengraphimage.png" />
+
+    <!--<link rel="shortcut icon" type="image/png" href="assets/images/logo/icon.png">-->
+    <link rel="shortcut icon" type="image/png" href="./items/images/opengraphimage.png">
+
+    <!-- stylesheets -->
+    <!-- owl carousel -->
+    <link rel="stylesheet" href="./items/styles/owl.carousel.min.css">
+    <link rel="stylesheet" href="./items/styles/owl.theme.default.min.css">
+    <!-- header -->
+    <link rel="stylesheet" href="./items/styles/header.css">
+    <!-- style -->
+    <link rel="stylesheet" href="./items/styles/style.css">
+    <!-- footer -->
+    <link rel="stylesheet" href="./items/styles/footer.css">
+    <!-- responsive -->
+    <link rel="stylesheet" href="./items/styles/responsive.css">
+
+    <!-- javascripts -->
+    <!-- jquery -->
+    <script src="./items/javascripts/query-3.6.0.min.js" defer></script>
+    <!-- owl carousel -->
+    <script src="./items/javascripts/owl.carousel.min.js" defer></script>
+    <!--main-->
+    <script src="./items/javascripts/main.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <section class="login-section">
+        <h3>Sign Up</h3>
+        <form method=post name=mainform onsubmit="return checkform()" class="form-horizontal">
+            <input type=hidden name=a value='do_login'>
+            <input type=hidden name=follow value='{$frm.follow}'>
+            <input type=hidden name=follow_id value='{$frm.follow_id}'>
+
+            <input type=text name=username autofocus="autofocus" placeholder="Username">
+            <input type=password name=password placeholder="Password">
+            <input type=password name=confirm placeholder="confirm">
+            <button class="submit-btn" type="submit" value="SignUp">Sign Up</button>
+        </form>
+
+        <p>forgot your password? <a href="../signupPage/index.html">Reset password</a></p>
+
+
+        <p class="button-text">Already have an account?<a href="../loginPage/index.html">Login</a></p>
+    </section>
+
+</body>
+
+</html>

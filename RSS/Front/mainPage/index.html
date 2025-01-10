@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
+
+    <h2>Google Maps with Markers</h2>
+    <div id="description">This map example displays several random markers. Select which markers to display from the dropdown menu. When a marker is clicked, its info window opens.</div>
+    <div id="dropdown">
+        <select id="locations" onchange="filterLocations(this.value);">
+        <option value="">-- All Locations --</option>
+        <option value="Home">Home</option>
+        <option value="Family">Family</option>
+        <option value="Friends">Friends</option>
+      </select>
+    </div>
+    <p>
+        <div id="map"></div>
+
+        <!-- Replace the value of the key parameter with browser-restricted API key. Add application and API restrictions for security. -->
+
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCodvr4TmsTJdYPjs_5PWLPTNLA9uA4iq8&callback=initMap" async defer></script>
+
+
+        <script src="./script.js"></script>
+</body>
+
+</html>
